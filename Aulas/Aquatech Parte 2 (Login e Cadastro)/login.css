@@ -1,0 +1,151 @@
+body {
+    margin: 0; /*Margem de fora*/
+    padding: 0; /*Margem de dentro*/
+    box-sizing: border-box; /*Estrutura */
+    font-family: sans-serif; /*Fonte das letras*/
+    background-color: #000; /*Define o fundo preto da tela*/
+}
+
+.container {
+    display: flex;
+    width: 80%; /* Largura  */
+    margin: 0 auto; /* Centraliza o container */
+    justify-content: space-between; /* Espaço  */
+    align-items: center; /* Alinha os itens  */
+}
+
+.header {
+    background-color: #000; /* Fundo preto */
+    padding: 20px 0; /*Margem de dentro*/
+    border-bottom: 2px solid #32b9cd; /* Linha ciano fina na imagem */
+}
+
+.titulo {
+    color: #32b9cd; /*  AcquaTec */
+    margin: 0; /*Margem*/
+    font-size: 32px; /*Tamanho da fonte*/
+}
+
+.navbar {
+    display: flex;
+    list-style: none; /* Remove bolinhas */
+    margin: 0; /*Margem */
+    padding: 0; /*Margem de dentro*/
+    align-items: center; /*Alinha os itens*/
+    gap: 30px; /* Espaço entre os links */
+}
+
+.navbar li {
+    display: flex;
+    align-items: center; /*Alinha os itens*/
+    color: #32b9cd; /* Cor do divisor '|' */
+    font-weight: bold; /*Deixa a linha mais forte*/
+}
+
+.navbar a {
+    display: flex;
+    text-decoration: none; /* Remove sublinhado */
+    color: #c57f2f; /* Cor */
+    font-weight: bold; /*Deixa a linha mais forte*/
+}
+
+/* Agora a parte de login */
+.login {
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 84px - 100px); /* Ajuste de altura */
+    background-image: url('assets/imgs/bg-jelly-fish-para_outras_pags.png');
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /*Centraliza os itens*/
+}
+
+.card-login {
+    display: flex;
+    background-color: #e0e0e0; /* Cinza claro da imagem */
+    width: 400px; 
+    padding: 30px;
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para profundidade */
+    flex-direction: column; /*Ajusta as direções*/
+    align-items: center;
+    justify-content: center;
+}
+
+.card-login h2 {
+    color: #ff007f; /* Cor rosa */
+    margin-bottom: 25px;
+    font-size: 24px;
+    justify-content: center;
+}
+
+.formulario {
+    width: 100%;
+    justify-content: center;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+
+.campo span {
+    color: #ff007f;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    justify-content: center;
+}
+
+.campo input {
+    height: 35px;
+    border: 2px solid #32b9cd; /* Borda ciano fina */
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 0 10px;
+    background-color: #fff;
+    color: #333; /* Cor do texto digitado */
+    font-size: 14px;
+    justify-content: center;
+}
+
+.campo input::placeholder {
+    color: #aaa; /* Cor  ("Login", "******") */
+}
+
+.botao {
+    width: 100%;
+    height: 35px;
+    background-color: #ff007f; /* Cor rosa */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Cantos arredondados */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.botao:hover {
+    background-color: #e60072; /*Cor do botão*/
+
+}.footer {
+    background-color: #32b9cd; /* Fundo ciano AcquaTec */
+    padding: 30px 0;/*Margem de dentro*/
+    text-align: center; /*Alinhamento do texto*/
+    color: #fff; /* Texto branco */
+}
+
+.footer .container {
+    flex-direction: column; /* Itens um abaixo do outro */
+    gap: 5px; /* Pequeno espaço entre o texto e a versão */
+}
+
+.footer h4 {
+    margin: 0;/*Tamanho da margem*/
+    font-size: 16px; /*Tamanho da fonte*/
+    font-weight: normal; /* Remove negrito do título */
+}
+
+.version {
+    font-size: 12px; /*Tamanho da fonte*/
+}
